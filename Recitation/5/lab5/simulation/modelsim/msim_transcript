@@ -1,0 +1,147 @@
+# Reading D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do alu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Recitation/5/lab5 {D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:07:26 on Sep 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Recitation/5/lab5" D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 10:07:26 on Sep 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Recitation/5/lab5 {D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:07:26 on Sep 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Recitation/5/lab5" D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 10:07:26 on Sep 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 10:07:26 on Sep 30,2022
+# Loading work.alu_tb
+# Loading work.alu
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+# add - A: 00000001, B: 00000001, expected: 00000002, actual: 00000002
+# add - A: 00000002, B: 00000002, expected: 00000004, actual: 00000004
+# add - A: 00000004, B: 00000004, expected: 00000008, actual: 00000008
+# add - A: 00000008, B: 00000008, expected: 00000010, actual: 00000010
+# add - A: 00000010, B: 00000010, expected: 00000020, actual: 00000020
+# add - A: 00000020, B: 00000020, expected: 00000040, actual: 00000040
+# add - A: 00000040, B: 00000040, expected: 00000080, actual: 00000080
+# add - A: 00000080, B: 00000080, expected: 00000100, actual: 00000100
+# add - A: 00000100, B: 00000100, expected: 00000200, actual: 00000200
+# add - A: 00000200, B: 00000200, expected: 00000400, actual: 00000400
+# add - A: 00000400, B: 00000400, expected: 00000800, actual: 00000800
+# add - A: 00000800, B: 00000800, expected: 00001000, actual: 00001000
+# add - A: 00001000, B: 00001000, expected: 00002000, actual: 00002000
+# add - A: 00002000, B: 00002000, expected: 00004000, actual: 00004000
+# add - A: 00004000, B: 00004000, expected: 00008000, actual: 00008000
+# add - A: 00008000, B: 00008000, expected: 00010000, actual: 00010000
+# add - A: 00010000, B: 00010000, expected: 00020000, actual: 00020000
+# add - A: 00020000, B: 00020000, expected: 00040000, actual: 00040000
+# add - A: 00040000, B: 00040000, expected: 00080000, actual: 00080000
+# add - A: 00080000, B: 00080000, expected: 00100000, actual: 00100000
+# add - A: 00100000, B: 00100000, expected: 00200000, actual: 00200000
+# add - A: 00200000, B: 00200000, expected: 00400000, actual: 00400000
+# add - A: 00400000, B: 00400000, expected: 00800000, actual: 00800000
+# add - A: 00800000, B: 00800000, expected: 01000000, actual: 01000000
+# add - A: 01000000, B: 01000000, expected: 02000000, actual: 02000000
+# add - A: 02000000, B: 02000000, expected: 04000000, actual: 04000000
+# add - A: 04000000, B: 04000000, expected: 08000000, actual: 08000000
+# add - A: 08000000, B: 08000000, expected: 10000000, actual: 10000000
+# add - A: 10000000, B: 10000000, expected: 20000000, actual: 20000000
+# add - A: 20000000, B: 20000000, expected: 40000000, actual: 40000000
+# add - A: 40000000, B: 40000000, expected: 80000000, actual: 80000000
+# sub - A: 00000001, B: 00000002, expected: ffffffff, actual: ffffffff
+# sub - A: 00000002, B: 00000004, expected: fffffffe, actual: fffffffe
+# sub - A: 00000004, B: 00000008, expected: fffffffc, actual: fffffffc
+# sub - A: 00000008, B: 00000010, expected: fffffff8, actual: fffffff8
+# sub - A: 00000010, B: 00000020, expected: fffffff0, actual: fffffff0
+# sub - A: 00000020, B: 00000040, expected: ffffffe0, actual: ffffffe0
+# sub - A: 00000040, B: 00000080, expected: ffffffc0, actual: ffffffc0
+# sub - A: 00000080, B: 00000100, expected: ffffff80, actual: ffffff80
+# sub - A: 00000100, B: 00000200, expected: ffffff00, actual: ffffff00
+# sub - A: 00000200, B: 00000400, expected: fffffe00, actual: fffffe00
+# sub - A: 00000400, B: 00000800, expected: fffffc00, actual: fffffc00
+# sub - A: 00000800, B: 00001000, expected: fffff800, actual: fffff800
+# sub - A: 00001000, B: 00002000, expected: fffff000, actual: fffff000
+# sub - A: 00002000, B: 00004000, expected: ffffe000, actual: ffffe000
+# sub - A: 00004000, B: 00008000, expected: ffffc000, actual: ffffc000
+# sub - A: 00008000, B: 00010000, expected: ffff8000, actual: ffff8000
+# sub - A: 00010000, B: 00020000, expected: ffff0000, actual: ffff0000
+# sub - A: 00020000, B: 00040000, expected: fffe0000, actual: fffe0000
+# sub - A: 00040000, B: 00080000, expected: fffc0000, actual: fffc0000
+# sub - A: 00080000, B: 00100000, expected: fff80000, actual: fff80000
+# sub - A: 00100000, B: 00200000, expected: fff00000, actual: fff00000
+# sub - A: 00200000, B: 00400000, expected: ffe00000, actual: ffe00000
+# sub - A: 00400000, B: 00800000, expected: ffc00000, actual: ffc00000
+# sub - A: 00800000, B: 01000000, expected: ff800000, actual: ff800000
+# sub - A: 01000000, B: 02000000, expected: ff000000, actual: ff000000
+# sub - A: 02000000, B: 04000000, expected: fe000000, actual: fe000000
+# sub - A: 04000000, B: 08000000, expected: fc000000, actual: fc000000
+# sub - A: 08000000, B: 10000000, expected: f8000000, actual: f8000000
+# sub - A: 10000000, B: 20000000, expected: f0000000, actual: f0000000
+# sub - A: 20000000, B: 40000000, expected: e0000000, actual: e0000000
+# sub - A: 40000000, B: 80000000, expected: c0000000, actual: c0000000
+# sub - A: 00000002, B: 00000001, expected: 00000001, actual: 00000001
+# sub - A: 00000004, B: 00000002, expected: 00000002, actual: 00000002
+# sub - A: 00000008, B: 00000004, expected: 00000004, actual: 00000004
+# sub - A: 00000010, B: 00000008, expected: 00000008, actual: 00000008
+# sub - A: 00000020, B: 00000010, expected: 00000010, actual: 00000010
+# sub - A: 00000040, B: 00000020, expected: 00000020, actual: 00000020
+# sub - A: 00000080, B: 00000040, expected: 00000040, actual: 00000040
+# sub - A: 00000100, B: 00000080, expected: 00000080, actual: 00000080
+# sub - A: 00000200, B: 00000100, expected: 00000100, actual: 00000100
+# sub - A: 00000400, B: 00000200, expected: 00000200, actual: 00000200
+# sub - A: 00000800, B: 00000400, expected: 00000400, actual: 00000400
+# sub - A: 00001000, B: 00000800, expected: 00000800, actual: 00000800
+# sub - A: 00002000, B: 00001000, expected: 00001000, actual: 00001000
+# sub - A: 00004000, B: 00002000, expected: 00002000, actual: 00002000
+# sub - A: 00008000, B: 00004000, expected: 00004000, actual: 00004000
+# sub - A: 00010000, B: 00008000, expected: 00008000, actual: 00008000
+# sub - A: 00020000, B: 00010000, expected: 00010000, actual: 00010000
+# sub - A: 00040000, B: 00020000, expected: 00020000, actual: 00020000
+# sub - A: 00080000, B: 00040000, expected: 00040000, actual: 00040000
+# sub - A: 00100000, B: 00080000, expected: 00080000, actual: 00080000
+# sub - A: 00200000, B: 00100000, expected: 00100000, actual: 00100000
+# sub - A: 00400000, B: 00200000, expected: 00200000, actual: 00200000
+# sub - A: 00800000, B: 00400000, expected: 00400000, actual: 00400000
+# sub - A: 01000000, B: 00800000, expected: 00800000, actual: 00800000
+# sub - A: 02000000, B: 01000000, expected: 01000000, actual: 01000000
+# sub - A: 04000000, B: 02000000, expected: 02000000, actual: 02000000
+# sub - A: 08000000, B: 04000000, expected: 04000000, actual: 04000000
+# sub - A: 10000000, B: 08000000, expected: 08000000, actual: 08000000
+# sub - A: 20000000, B: 10000000, expected: 10000000, actual: 10000000
+# sub - A: 40000000, B: 20000000, expected: 20000000, actual: 20000000
+# sub - A: 80000000, B: 40000000, expected: 40000000, actual: 40000000
+# The simulation completed without errors
+# ** Note: $stop    : D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu_tb.v(51)
+#    Time: 4360 ns  Iteration: 1  Instance: /alu_tb
+# Break in Module alu_tb at D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu_tb.v line 51
+# End time: 10:23:38 on Sep 30,2022, Elapsed time: 0:16:12
+# Errors: 0, Warnings: 0

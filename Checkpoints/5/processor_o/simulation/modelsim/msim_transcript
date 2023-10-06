@@ -1,0 +1,172 @@
+# Reading D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton.v 
+# -- Compiling module skeleton
+# 
+# Top level modules:
+# 	skeleton
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/dffe.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/dffe.v 
+# -- Compiling module dffe_ref
+# -- Compiling module dffe_imem
+# 
+# Top level modules:
+# 	dffe_ref
+# 	dffe_imem
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/bitCheck.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/bitCheck.v 
+# -- Compiling module bitCheck
+# 
+# Top level modules:
+# 	bitCheck
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/freqdiv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/freqdiv.v 
+# -- Compiling module clk_div_2
+# -- Compiling module clk_div_4
+# 
+# Top level modules:
+# 	clk_div_2
+# 	clk_div_4
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/processor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/processor.v 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/operchecker.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/operchecker.v 
+# -- Compiling module operchecker
+# 
+# Top level modules:
+# 	operchecker
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/imem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/imem.v 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/dmem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/dmem.v 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/5/processor_o {D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:54:42 on Nov 29,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o" D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton_tb.v 
+# -- Compiling module skeleton_tb
+# 
+# Top level modules:
+# 	skeleton_tb
+# End time: 00:54:42 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  skeleton_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" skeleton_tb 
+# Start time: 00:54:43 on Nov 29,2022
+# Loading work.skeleton_tb
+# Loading work.skeleton
+# Loading work.clk_div_4
+# Loading work.imem
+# Loading altera_mf_ver.altsyncram
+# Loading work.dmem
+# Loading work.regfile
+# Loading work.bitCheck
+# Loading work.dffe_ref
+# Loading work.processor
+# Loading work.operchecker
+# Loading work.alu
+# Loading work.dffe_imem
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+# The simulation completed without errors
+# ** Note: $stop    : D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton_tb.v(33)
+#    Time: 4050 ns  Iteration: 0  Instance: /skeleton_tb
+# Break in Module skeleton_tb at D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton_tb.v line 33
+add wave -position insertpoint  \
+sim:/skeleton_tb/s1/my_regfile/q
+add wave -position insertpoint  \
+sim:/skeleton_tb/s1/my_processor/address_imem
+restart
+run -continue
+#                    0 << Starting the Simulation >>
+# The simulation completed without errors
+# ** Note: $stop    : D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton_tb.v(33)
+#    Time: 4050 ns  Iteration: 0  Instance: /skeleton_tb
+# Break in Module skeleton_tb at D:/xy/GDA/MS/ECE/550/Project Checkpoints/5/processor_o/skeleton_tb.v line 33
+# End time: 00:55:35 on Nov 29,2022, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 0

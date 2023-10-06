@@ -1,0 +1,279 @@
+Determining the location of the ModelSim executable...
+
+Using: D:\sw\Quartus\17\intelFPGA_lite\17.0\modelsim_ase\win32aloem\
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/Waveform.vwf" --testbench_file="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Thu Nov 10 13:27:11 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/Waveform.vwf" --testbench_file="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/Waveform.vwf.vt"
+Info (119006): Selected device EP4CE115F29C7 for design "processor"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+n writing test bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/" processor -c processor
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Thu Nov 10 13:27:12 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/" processor -c processor
+Info (119006): Selected device EP4CE115F29C7 for design "processor"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file processor.vo in folder "D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4651 megabytes
+    Info: Processing ended: Thu Nov 10 13:27:13 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/processor.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/win32aloem//vsim -c -do processor.do
+
+Reading D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do processor.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:27:16 on Nov 10,2022
+# vlog -work work processor.vo 
+
+# -- Compiling module skeleton_test
+
+# 
+# Top level modules:
+# 	skeleton_test
+# End time: 13:27:17 on Nov 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:27:17 on Nov 10,2022
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module skeleton_test_vlg_vec_tst
+# 
+# Top level modules:
+# 	skeleton_test_vlg_vec_tst
+# End time: 13:27:17 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.skeleton_test_vlg_vec_tst 
+# Start time: 13:27:17 on Nov 10,2022
+# Loading work.skeleton_test_vlg_vec_tst
+# Loading work.skeleton_test
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 12466 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#25
+
+# ** Note: $finish    : Waveform.vwf.vt(95)
+#    Time: 1 us  Iteration: 0  Instance: /skeleton_test_vlg_vec_tst
+# End time: 13:27:20 on Nov 10,2022, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/Waveform.vwf...
+
+Reading D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/processor.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: reg8[31] - signal not found in VCD.
+
+Warning: reg8[30] - signal not found in VCD.
+
+Warning: reg8[29] - signal not found in VCD.
+
+Warning: reg8[28] - signal not found in VCD.
+
+Warning: reg8[27] - signal not found in VCD.
+
+Warning: reg8[26] - signal not found in VCD.
+
+Warning: reg8[25] - signal not found in VCD.
+
+Warning: reg8[24] - signal not found in VCD.
+
+Warning: reg8[23] - signal not found in VCD.
+
+Warning: reg8[22] - signal not found in VCD.
+
+Warning: reg8[21] - signal not found in VCD.
+
+Warning: reg8[20] - signal not found in VCD.
+
+Warning: reg8[19] - signal not found in VCD.
+
+Warning: reg8[18] - signal not found in VCD.
+
+Warning: reg8[17] - signal not found in VCD.
+
+Warning: reg8[16] - signal not found in VCD.
+
+Warning: reg8[15] - signal not found in VCD.
+
+Warning: reg8[14] - signal not found in VCD.
+
+Warning: reg8[13] - signal not found in VCD.
+
+Warning: reg8[12] - signal not found in VCD.
+
+Warning: reg8[11] - signal not found in VCD.
+
+Warning: reg8[10] - signal not found in VCD.
+
+Warning: reg8[9] - signal not found in VCD.
+
+Warning: reg8[8] - signal not found in VCD.
+
+Warning: reg8[7] - signal not found in VCD.
+
+Warning: reg8[6] - signal not found in VCD.
+
+Warning: reg8[5] - signal not found in VCD.
+
+Warning: reg8[4] - signal not found in VCD.
+
+Warning: reg8[3] - signal not found in VCD.
+
+Warning: reg8[2] - signal not found in VCD.
+
+Warning: reg8[1] - signal not found in VCD.
+
+Warning: reg8[0] - signal not found in VCD.
+
+Warning: reg9[31] - signal not found in VCD.
+
+Warning: reg9[30] - signal not found in VCD.
+
+Warning: reg9[29] - signal not found in VCD.
+
+Warning: reg9[28] - signal not found in VCD.
+
+Warning: reg9[27] - signal not found in VCD.
+
+Warning: reg9[26] - signal not found in VCD.
+
+Warning: reg9[25] - signal not found in VCD.
+
+Warning: reg9[24] - signal not found in VCD.
+
+Warning: reg9[23] - signal not found in VCD.
+
+Warning: reg9[22] - signal not found in VCD.
+
+Warning: reg9[21] - signal not found in VCD.
+
+Warning: reg9[20] - signal not found in VCD.
+
+Warning: reg9[19] - signal not found in VCD.
+
+Warning: reg9[18] - signal not found in VCD.
+
+Warning: reg9[17] - signal not found in VCD.
+
+Warning: reg9[16] - signal not found in VCD.
+
+Warning: reg9[15] - signal not found in VCD.
+
+Warning: reg9[14] - signal not found in VCD.
+
+Warning: reg9[13] - signal not found in VCD.
+
+Warning: reg9[12] - signal not found in VCD.
+
+Warning: reg9[11] - signal not found in VCD.
+
+Warning: reg9[10] - signal not found in VCD.
+
+Warning: reg9[9] - signal not found in VCD.
+
+Warning: reg9[8] - signal not found in VCD.
+
+Warning: reg9[7] - signal not found in VCD.
+
+Warning: reg9[6] - signal not found in VCD.
+
+Warning: reg9[5] - signal not found in VCD.
+
+Warning: reg9[4] - signal not found in VCD.
+
+Warning: reg9[3] - signal not found in VCD.
+
+Warning: reg9[2] - signal not found in VCD.
+
+Warning: reg9[1] - signal not found in VCD.
+
+Warning: reg9[0] - signal not found in VCD.
+
+Writing the resulting VWF to D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor/simulation/qsim/processor_20221110132720.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

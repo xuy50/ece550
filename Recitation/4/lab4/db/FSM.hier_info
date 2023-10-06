@@ -1,0 +1,44 @@
+|FSM
+clock => SMe~1.DATAIN
+clock => SMo~1.DATAIN
+rst => SMe~3.DATAIN
+rst => SMo~3.DATAIN
+w => Selector1.IN3
+w => Selector2.IN3
+w => Selector3.IN3
+w => Selector4.IN3
+w => Selector0.IN5
+w => Selector6.IN3
+w => Selector12.IN4
+w => Selector7.IN3
+w => Selector11.IN4
+w => Selector8.IN3
+w => Selector12.IN5
+w => Selector9.IN3
+w => Selector10.IN3
+w => countMealy.DATAB
+w => Selector5.IN5
+w => Selector10.IN1
+w => Selector11.IN2
+w => Selector12.IN1
+w => Selector12.IN2
+w => Selector0.IN4
+w => Selector1.IN2
+w => Selector2.IN2
+w => Selector3.IN2
+w => Selector4.IN2
+w => Selector5.IN2
+w => Selector6.IN1
+w => Selector7.IN1
+w => Selector8.IN1
+w => Selector9.IN1
+countMoore << countMoore.DB_MAX_OUTPUT_PORT_TYPE
+countMealy << countMealy.DB_MAX_OUTPUT_PORT_TYPE
+STATEMoore[0] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+STATEMoore[1] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+STATEMoore[2] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+STATEMealy[0] << Selector12.DB_MAX_OUTPUT_PORT_TYPE
+STATEMealy[1] << Selector11.DB_MAX_OUTPUT_PORT_TYPE
+STATEMealy[2] << Selector10.DB_MAX_OUTPUT_PORT_TYPE
+
+

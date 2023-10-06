@@ -1,0 +1,211 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
+
+// DATE "11/11/2022 11:39:49"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module skeleton (
+	clock,
+	reset,
+	imem_clock,
+	dmem_clock,
+	processor_clock,
+	regfile_clock);
+input 	clock;
+input 	reset;
+output 	imem_clock;
+output 	dmem_clock;
+output 	processor_clock;
+output 	regfile_clock;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \imem_clock~output_o ;
+wire \dmem_clock~output_o ;
+wire \processor_clock~output_o ;
+wire \regfile_clock~output_o ;
+wire \clock~input_o ;
+wire \clock_div_4|r_reg[0]~0_combout ;
+wire \reset~input_o ;
+wire \clock_div_4|clk_track~0_combout ;
+wire \clock_div_4|clk_track~q ;
+wire [1:0] \clock_div_4|r_reg ;
+
+
+cycloneive_io_obuf \imem_clock~output (
+	.i(\clock~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\imem_clock~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \imem_clock~output .bus_hold = "false";
+defparam \imem_clock~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \dmem_clock~output (
+	.i(!\clock~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\dmem_clock~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \dmem_clock~output .bus_hold = "false";
+defparam \dmem_clock~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \processor_clock~output (
+	.i(!\clock_div_4|clk_track~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\processor_clock~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \processor_clock~output .bus_hold = "false";
+defparam \processor_clock~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \regfile_clock~output (
+	.i(!\clock_div_4|clk_track~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\regfile_clock~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \regfile_clock~output .bus_hold = "false";
+defparam \regfile_clock~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.o(\clock~input_o ));
+// synopsys translate_off
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb \clock_div_4|r_reg[0]~0 (
+// Equation(s):
+// \clock_div_4|r_reg[0]~0_combout  = !\clock_div_4|r_reg [0]
+
+	.dataa(\clock_div_4|r_reg [0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\clock_div_4|r_reg[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clock_div_4|r_reg[0]~0 .lut_mask = 16'h5555;
+defparam \clock_div_4|r_reg[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \clock_div_4|r_reg[0] (
+	.clk(\clock~input_o ),
+	.d(\clock_div_4|r_reg[0]~0_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clock_div_4|r_reg [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clock_div_4|r_reg[0] .is_wysiwyg = "true";
+defparam \clock_div_4|r_reg[0] .power_up = "low";
+// synopsys translate_on
+
+cycloneive_lcell_comb \clock_div_4|clk_track~0 (
+// Equation(s):
+// \clock_div_4|clk_track~0_combout  = \clock_div_4|clk_track~q  $ (\clock_div_4|r_reg [0])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\clock_div_4|clk_track~q ),
+	.datad(\clock_div_4|r_reg [0]),
+	.cin(gnd),
+	.combout(\clock_div_4|clk_track~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clock_div_4|clk_track~0 .lut_mask = 16'h0FF0;
+defparam \clock_div_4|clk_track~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+dffeas \clock_div_4|clk_track (
+	.clk(\clock~input_o ),
+	.d(\clock_div_4|clk_track~0_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clock_div_4|clk_track~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clock_div_4|clk_track .is_wysiwyg = "true";
+defparam \clock_div_4|clk_track .power_up = "low";
+// synopsys translate_on
+
+assign imem_clock = \imem_clock~output_o ;
+
+assign dmem_clock = \dmem_clock~output_o ;
+
+assign processor_clock = \processor_clock~output_o ;
+
+assign regfile_clock = \regfile_clock~output_o ;
+
+endmodule

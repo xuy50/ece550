@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at bits3display.v(11): always construct contains both blocking and non-blocking assignments File: D:/xy/GDA/MS/ECE/550/Recitation/6/Lab6/3-bits-7-segment-display/bits3display.v Line: 11

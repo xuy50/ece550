@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at alu.v(65): always construct contains both blocking and non-blocking assignments File: D:/xy/GDA/MS/ECE/550/Project Checkpoints/1/alu/alu.v Line: 65

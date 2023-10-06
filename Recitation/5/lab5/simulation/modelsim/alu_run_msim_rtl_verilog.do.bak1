@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Recitation/5/lab5 {D:/xy/GDA/MS/ECE/550/Recitation/5/lab5/alu.v}
+

@@ -1,0 +1,22 @@
+
+State Machine - |FSM|SMe
+Name SMe.sMe7 SMe.sMe6 SMe.sMe5 SMe.sMe4 SMe.sMe3 SMe.sMe2 SMe.sMe1 SMe.sMe0 
+SMe.sMe0 0 0 0 0 0 0 0 0 
+SMe.sMe1 0 0 0 0 0 0 1 1 
+SMe.sMe2 0 0 0 0 0 1 0 1 
+SMe.sMe3 0 0 0 0 1 0 0 1 
+SMe.sMe4 0 0 0 1 0 0 0 1 
+SMe.sMe5 0 0 1 0 0 0 0 1 
+SMe.sMe6 0 1 0 0 0 0 0 1 
+SMe.sMe7 1 0 0 0 0 0 0 1 
+
+State Machine - |FSM|SMo
+Name SMo.sMo7 SMo.sMo6 SMo.sMo5 SMo.sMo4 SMo.sMo3 SMo.sMo2 SMo.sMo1 SMo.sMo0 
+SMo.sMo0 0 0 0 0 0 0 0 0 
+SMo.sMo1 0 0 0 0 0 0 1 1 
+SMo.sMo2 0 0 0 0 0 1 0 1 
+SMo.sMo3 0 0 0 0 1 0 0 1 
+SMo.sMo4 0 0 0 1 0 0 0 1 
+SMo.sMo5 0 0 1 0 0 0 0 1 
+SMo.sMo6 0 1 0 0 0 0 0 1 
+SMo.sMo7 1 0 0 0 0 0 0 1 

@@ -1,0 +1,13 @@
+(isJ ? {5'b0, q_imem[26:0]} : 32'bz);
+	 // pc bne
+	 assign npcRes = (isBne ? (aluIsNotEqual ? bRes : npcResO) : 32'bz);
+	 // pc jal
+	 assign npcRes = (isJal ? {5'b0, q_imem[26:0]} : 32'bz);
+	 assign ctrl_writeReg = (isJal ? 5'd31 : 5'bz);
+	 assign data_writeReg = (isJal ? {5'b0, q_imem[26:0]} : 32'bz);
+	 // pc jr
+	 assign npcRes = isJr ? data_readRegA : 32'bz;
+	 // pc blt
+	 assign npcRes = isBlt ? (aluIsLessThan ? bRes : npcResO) : 32'bz;
+	 // pc bex
+	 assign npcRes = isBex ? ((~bexC) ? {5'b0, q_imem[26:0]} : npcResO) : 32'bz;

@@ -1,0 +1,629 @@
+Determining the location of the ModelSim executable...
+
+Using: D:\sw\Quartus\17\intelFPGA_lite\17.0\modelsim_ase\win32aloem\
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/Waveform.vwf" --testbench_file="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Fri Nov 11 11:39:47 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off processor -c processor --vector_source="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/Waveform.vwf" --testbench_file="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/Waveform.vwf.vt"
+Info (119006): Selected device EP4CE115F29C7 for design "processor"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+n writing test bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/" processor -c processor
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Fri Nov 11 11:39:48 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/" processor -c processor
+Info (119006): Selected device EP4CE115F29C7 for design "processor"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file processor.vo in folder "D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4640 megabytes
+    Info: Processing ended: Fri Nov 11 11:39:49 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/processor.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/win32aloem//vsim -c -do processor.do
+
+Reading D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do processor.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:39:51 on Nov 11,2022
+# vlog -work work processor.vo 
+# -- Compiling module skeleton
+# 
+# Top level modules:
+# 	skeleton
+# End time: 11:39:51 on Nov 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:39:51 on Nov 11,2022
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module skeleton_vlg_vec_tst
+# 
+# Top level modules:
+# 	skeleton_vlg_vec_tst
+# End time: 11:39:51 on Nov 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.skeleton_test_vlg_vec_tst 
+# Start time: 11:39:51 on Nov 11,2022
+# Loading work.skeleton_test_vlg_vec_tst
+# Loading work.skeleton_test
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 11644 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#25
+
+# ** Note: $finish    : Waveform.vwf.vt(79)
+#    Time: 1 us  Iteration: 0  Instance: /skeleton_test_vlg_vec_tst
+# End time: 11:39:55 on Nov 11,2022, Elapsed time: 0:00:04
+# Simulation time: 0 ps
+
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/Waveform.vwf...
+
+Reading D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/processor.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: address_dmem[11] - signal not found in VCD.
+
+Warning: address_dmem[10] - signal not found in VCD.
+
+Warning: address_dmem[9] - signal not found in VCD.
+
+Warning: address_dmem[8] - signal not found in VCD.
+
+Warning: address_dmem[7] - signal not found in VCD.
+
+Warning: address_dmem[6] - signal not found in VCD.
+
+Warning: address_dmem[5] - signal not found in VCD.
+
+Warning: address_dmem[4] - signal not found in VCD.
+
+Warning: address_dmem[3] - signal not found in VCD.
+
+Warning: address_dmem[2] - signal not found in VCD.
+
+Warning: address_dmem[1] - signal not found in VCD.
+
+Warning: address_dmem[0] - signal not found in VCD.
+
+Warning: address_imem[11] - signal not found in VCD.
+
+Warning: address_imem[10] - signal not found in VCD.
+
+Warning: address_imem[9] - signal not found in VCD.
+
+Warning: address_imem[8] - signal not found in VCD.
+
+Warning: address_imem[7] - signal not found in VCD.
+
+Warning: address_imem[6] - signal not found in VCD.
+
+Warning: address_imem[5] - signal not found in VCD.
+
+Warning: address_imem[4] - signal not found in VCD.
+
+Warning: address_imem[3] - signal not found in VCD.
+
+Warning: address_imem[2] - signal not found in VCD.
+
+Warning: address_imem[1] - signal not found in VCD.
+
+Warning: address_imem[0] - signal not found in VCD.
+
+Warning: clock - signal not found in VCD.
+
+Warning: ctrl_readRegA[4] - signal not found in VCD.
+
+Warning: ctrl_readRegA[3] - signal not found in VCD.
+
+Warning: ctrl_readRegA[2] - signal not found in VCD.
+
+Warning: ctrl_readRegA[1] - signal not found in VCD.
+
+Warning: ctrl_readRegA[0] - signal not found in VCD.
+
+Warning: ctrl_readRegB[4] - signal not found in VCD.
+
+Warning: ctrl_readRegB[3] - signal not found in VCD.
+
+Warning: ctrl_readRegB[2] - signal not found in VCD.
+
+Warning: ctrl_readRegB[1] - signal not found in VCD.
+
+Warning: ctrl_readRegB[0] - signal not found in VCD.
+
+Warning: ctrl_writeEnable - signal not found in VCD.
+
+Warning: ctrl_writeReg[4] - signal not found in VCD.
+
+Warning: ctrl_writeReg[3] - signal not found in VCD.
+
+Warning: ctrl_writeReg[2] - signal not found in VCD.
+
+Warning: ctrl_writeReg[1] - signal not found in VCD.
+
+Warning: ctrl_writeReg[0] - signal not found in VCD.
+
+Warning: data[31] - signal not found in VCD.
+
+Warning: data[30] - signal not found in VCD.
+
+Warning: data[29] - signal not found in VCD.
+
+Warning: data[28] - signal not found in VCD.
+
+Warning: data[27] - signal not found in VCD.
+
+Warning: data[26] - signal not found in VCD.
+
+Warning: data[25] - signal not found in VCD.
+
+Warning: data[24] - signal not found in VCD.
+
+Warning: data[23] - signal not found in VCD.
+
+Warning: data[22] - signal not found in VCD.
+
+Warning: data[21] - signal not found in VCD.
+
+Warning: data[20] - signal not found in VCD.
+
+Warning: data[19] - signal not found in VCD.
+
+Warning: data[18] - signal not found in VCD.
+
+Warning: data[17] - signal not found in VCD.
+
+Warning: data[16] - signal not found in VCD.
+
+Warning: data[15] - signal not found in VCD.
+
+Warning: data[14] - signal not found in VCD.
+
+Warning: data[13] - signal not found in VCD.
+
+Warning: data[12] - signal not found in VCD.
+
+Warning: data[11] - signal not found in VCD.
+
+Warning: data[10] - signal not found in VCD.
+
+Warning: data[9] - signal not found in VCD.
+
+Warning: data[8] - signal not found in VCD.
+
+Warning: data[7] - signal not found in VCD.
+
+Warning: data[6] - signal not found in VCD.
+
+Warning: data[5] - signal not found in VCD.
+
+Warning: data[4] - signal not found in VCD.
+
+Warning: data[3] - signal not found in VCD.
+
+Warning: data[2] - signal not found in VCD.
+
+Warning: data[1] - signal not found in VCD.
+
+Warning: data[0] - signal not found in VCD.
+
+Warning: data_readRegA[31] - signal not found in VCD.
+
+Warning: data_readRegA[30] - signal not found in VCD.
+
+Warning: data_readRegA[29] - signal not found in VCD.
+
+Warning: data_readRegA[28] - signal not found in VCD.
+
+Warning: data_readRegA[27] - signal not found in VCD.
+
+Warning: data_readRegA[26] - signal not found in VCD.
+
+Warning: data_readRegA[25] - signal not found in VCD.
+
+Warning: data_readRegA[24] - signal not found in VCD.
+
+Warning: data_readRegA[23] - signal not found in VCD.
+
+Warning: data_readRegA[22] - signal not found in VCD.
+
+Warning: data_readRegA[21] - signal not found in VCD.
+
+Warning: data_readRegA[20] - signal not found in VCD.
+
+Warning: data_readRegA[19] - signal not found in VCD.
+
+Warning: data_readRegA[18] - signal not found in VCD.
+
+Warning: data_readRegA[17] - signal not found in VCD.
+
+Warning: data_readRegA[16] - signal not found in VCD.
+
+Warning: data_readRegA[15] - signal not found in VCD.
+
+Warning: data_readRegA[14] - signal not found in VCD.
+
+Warning: data_readRegA[13] - signal not found in VCD.
+
+Warning: data_readRegA[12] - signal not found in VCD.
+
+Warning: data_readRegA[11] - signal not found in VCD.
+
+Warning: data_readRegA[10] - signal not found in VCD.
+
+Warning: data_readRegA[9] - signal not found in VCD.
+
+Warning: data_readRegA[8] - signal not found in VCD.
+
+Warning: data_readRegA[7] - signal not found in VCD.
+
+Warning: data_readRegA[6] - signal not found in VCD.
+
+Warning: data_readRegA[5] - signal not found in VCD.
+
+Warning: data_readRegA[4] - signal not found in VCD.
+
+Warning: data_readRegA[3] - signal not found in VCD.
+
+Warning: data_readRegA[2] - signal not found in VCD.
+
+Warning: data_readRegA[1] - signal not found in VCD.
+
+Warning: data_readRegA[0] - signal not found in VCD.
+
+Warning: data_readRegB[31] - signal not found in VCD.
+
+Warning: data_readRegB[30] - signal not found in VCD.
+
+Warning: data_readRegB[29] - signal not found in VCD.
+
+Warning: data_readRegB[28] - signal not found in VCD.
+
+Warning: data_readRegB[27] - signal not found in VCD.
+
+Warning: data_readRegB[26] - signal not found in VCD.
+
+Warning: data_readRegB[25] - signal not found in VCD.
+
+Warning: data_readRegB[24] - signal not found in VCD.
+
+Warning: data_readRegB[23] - signal not found in VCD.
+
+Warning: data_readRegB[22] - signal not found in VCD.
+
+Warning: data_readRegB[21] - signal not found in VCD.
+
+Warning: data_readRegB[20] - signal not found in VCD.
+
+Warning: data_readRegB[19] - signal not found in VCD.
+
+Warning: data_readRegB[18] - signal not found in VCD.
+
+Warning: data_readRegB[17] - signal not found in VCD.
+
+Warning: data_readRegB[16] - signal not found in VCD.
+
+Warning: data_readRegB[15] - signal not found in VCD.
+
+Warning: data_readRegB[14] - signal not found in VCD.
+
+Warning: data_readRegB[13] - signal not found in VCD.
+
+Warning: data_readRegB[12] - signal not found in VCD.
+
+Warning: data_readRegB[11] - signal not found in VCD.
+
+Warning: data_readRegB[10] - signal not found in VCD.
+
+Warning: data_readRegB[9] - signal not found in VCD.
+
+Warning: data_readRegB[8] - signal not found in VCD.
+
+Warning: data_readRegB[7] - signal not found in VCD.
+
+Warning: data_readRegB[6] - signal not found in VCD.
+
+Warning: data_readRegB[5] - signal not found in VCD.
+
+Warning: data_readRegB[4] - signal not found in VCD.
+
+Warning: data_readRegB[3] - signal not found in VCD.
+
+Warning: data_readRegB[2] - signal not found in VCD.
+
+Warning: data_readRegB[1] - signal not found in VCD.
+
+Warning: data_readRegB[0] - signal not found in VCD.
+
+Warning: data_writeReg[31] - signal not found in VCD.
+
+Warning: data_writeReg[30] - signal not found in VCD.
+
+Warning: data_writeReg[29] - signal not found in VCD.
+
+Warning: data_writeReg[28] - signal not found in VCD.
+
+Warning: data_writeReg[27] - signal not found in VCD.
+
+Warning: data_writeReg[26] - signal not found in VCD.
+
+Warning: data_writeReg[25] - signal not found in VCD.
+
+Warning: data_writeReg[24] - signal not found in VCD.
+
+Warning: data_writeReg[23] - signal not found in VCD.
+
+Warning: data_writeReg[22] - signal not found in VCD.
+
+Warning: data_writeReg[21] - signal not found in VCD.
+
+Warning: data_writeReg[20] - signal not found in VCD.
+
+Warning: data_writeReg[19] - signal not found in VCD.
+
+Warning: data_writeReg[18] - signal not found in VCD.
+
+Warning: data_writeReg[17] - signal not found in VCD.
+
+Warning: data_writeReg[16] - signal not found in VCD.
+
+Warning: data_writeReg[15] - signal not found in VCD.
+
+Warning: data_writeReg[14] - signal not found in VCD.
+
+Warning: data_writeReg[13] - signal not found in VCD.
+
+Warning: data_writeReg[12] - signal not found in VCD.
+
+Warning: data_writeReg[11] - signal not found in VCD.
+
+Warning: data_writeReg[10] - signal not found in VCD.
+
+Warning: data_writeReg[9] - signal not found in VCD.
+
+Warning: data_writeReg[8] - signal not found in VCD.
+
+Warning: data_writeReg[7] - signal not found in VCD.
+
+Warning: data_writeReg[6] - signal not found in VCD.
+
+Warning: data_writeReg[5] - signal not found in VCD.
+
+Warning: data_writeReg[4] - signal not found in VCD.
+
+Warning: data_writeReg[3] - signal not found in VCD.
+
+Warning: data_writeReg[2] - signal not found in VCD.
+
+Warning: data_writeReg[1] - signal not found in VCD.
+
+Warning: data_writeReg[0] - signal not found in VCD.
+
+Warning: dmem_clock - signal not found in VCD.
+
+Warning: imem_clock - signal not found in VCD.
+
+Warning: processor_clock - signal not found in VCD.
+
+Warning: q_dmem[31] - signal not found in VCD.
+
+Warning: q_dmem[30] - signal not found in VCD.
+
+Warning: q_dmem[29] - signal not found in VCD.
+
+Warning: q_dmem[28] - signal not found in VCD.
+
+Warning: q_dmem[27] - signal not found in VCD.
+
+Warning: q_dmem[26] - signal not found in VCD.
+
+Warning: q_dmem[25] - signal not found in VCD.
+
+Warning: q_dmem[24] - signal not found in VCD.
+
+Warning: q_dmem[23] - signal not found in VCD.
+
+Warning: q_dmem[22] - signal not found in VCD.
+
+Warning: q_dmem[21] - signal not found in VCD.
+
+Warning: q_dmem[20] - signal not found in VCD.
+
+Warning: q_dmem[19] - signal not found in VCD.
+
+Warning: q_dmem[18] - signal not found in VCD.
+
+Warning: q_dmem[17] - signal not found in VCD.
+
+Warning: q_dmem[16] - signal not found in VCD.
+
+Warning: q_dmem[15] - signal not found in VCD.
+
+Warning: q_dmem[14] - signal not found in VCD.
+
+Warning: q_dmem[13] - signal not found in VCD.
+
+Warning: q_dmem[12] - signal not found in VCD.
+
+Warning: q_dmem[11] - signal not found in VCD.
+
+Warning: q_dmem[10] - signal not found in VCD.
+
+Warning: q_dmem[9] - signal not found in VCD.
+
+Warning: q_dmem[8] - signal not found in VCD.
+
+Warning: q_dmem[7] - signal not found in VCD.
+
+Warning: q_dmem[6] - signal not found in VCD.
+
+Warning: q_dmem[5] - signal not found in VCD.
+
+Warning: q_dmem[4] - signal not found in VCD.
+
+Warning: q_dmem[3] - signal not found in VCD.
+
+Warning: q_dmem[2] - signal not found in VCD.
+
+Warning: q_dmem[1] - signal not found in VCD.
+
+Warning: q_dmem[0] - signal not found in VCD.
+
+Warning: q_imem[31] - signal not found in VCD.
+
+Warning: q_imem[30] - signal not found in VCD.
+
+Warning: q_imem[29] - signal not found in VCD.
+
+Warning: q_imem[28] - signal not found in VCD.
+
+Warning: q_imem[27] - signal not found in VCD.
+
+Warning: q_imem[26] - signal not found in VCD.
+
+Warning: q_imem[25] - signal not found in VCD.
+
+Warning: q_imem[24] - signal not found in VCD.
+
+Warning: q_imem[23] - signal not found in VCD.
+
+Warning: q_imem[22] - signal not found in VCD.
+
+Warning: q_imem[21] - signal not found in VCD.
+
+Warning: q_imem[20] - signal not found in VCD.
+
+Warning: q_imem[19] - signal not found in VCD.
+
+Warning: q_imem[18] - signal not found in VCD.
+
+Warning: q_imem[17] - signal not found in VCD.
+
+Warning: q_imem[16] - signal not found in VCD.
+
+Warning: q_imem[15] - signal not found in VCD.
+
+Warning: q_imem[14] - signal not found in VCD.
+
+Warning: q_imem[13] - signal not found in VCD.
+
+Warning: q_imem[12] - signal not found in VCD.
+
+Warning: q_imem[11] - signal not found in VCD.
+
+Warning: q_imem[10] - signal not found in VCD.
+
+Warning: q_imem[9] - signal not found in VCD.
+
+Warning: q_imem[8] - signal not found in VCD.
+
+Warning: q_imem[7] - signal not found in VCD.
+
+Warning: q_imem[6] - signal not found in VCD.
+
+Warning: q_imem[5] - signal not found in VCD.
+
+Warning: q_imem[4] - signal not found in VCD.
+
+Warning: q_imem[3] - signal not found in VCD.
+
+Warning: q_imem[2] - signal not found in VCD.
+
+Warning: q_imem[1] - signal not found in VCD.
+
+Warning: q_imem[0] - signal not found in VCD.
+
+Warning: regfile_clock - signal not found in VCD.
+
+Warning: reset - signal not found in VCD.
+
+Warning: wren - signal not found in VCD.
+
+Writing the resulting VWF to D:/xy/GDA/MS/ECE/550/Project Checkpoints/4/processor_o/simulation/qsim/processor_20221111113956.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

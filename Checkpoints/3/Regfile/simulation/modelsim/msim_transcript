@@ -1,0 +1,172 @@
+# Reading D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do Regfile_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/sw/Quartus/17/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/3/Regfile {D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:13 on Oct 05,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile" D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 11:31:14 on Oct 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/3/Regfile {D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/dffe.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Oct 05,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile" D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/dffe.v 
+# -- Compiling module dffe_ref
+# 
+# Top level modules:
+# 	dffe_ref
+# End time: 11:31:14 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/3/Regfile {D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/bitCheck.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Oct 05,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile" D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/bitCheck.v 
+# -- Compiling module bitCheck
+# 
+# Top level modules:
+# 	bitCheck
+# End time: 11:31:14 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/xy/GDA/MS/ECE/550/Project\ Checkpoints/3/Regfile {D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/regfile_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:14 on Oct 05,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile" D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/regfile_tb.v 
+# -- Compiling module regfile_tb
+# 
+# Top level modules:
+# 	regfile_tb
+# End time: 11:31:14 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  regfile_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" regfile_tb 
+# Start time: 11:31:14 on Oct 05,2023
+# Loading work.regfile_tb
+# Loading work.regfile
+# Loading work.bitCheck
+# Loading work.dffe_ref
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+#                   80 << Writing register  0 with 00000001 >>
+#                  160 << Writing register  1 with 00000002 >>
+#                  240 << Writing register  2 with 00000004 >>
+#                  320 << Writing register  3 with 00000008 >>
+#                  400 << Writing register  4 with 00000010 >>
+#                  480 << Writing register  5 with 00000020 >>
+#                  560 << Writing register  6 with 00000040 >>
+#                  640 << Writing register  7 with 00000080 >>
+#                  720 << Writing register  8 with 00000100 >>
+#                  800 << Writing register  9 with 00000200 >>
+#                  880 << Writing register 10 with 00000400 >>
+#                  960 << Writing register 11 with 00000800 >>
+#                 1040 << Writing register 12 with 00001000 >>
+#                 1120 << Writing register 13 with 00002000 >>
+#                 1200 << Writing register 14 with 00004000 >>
+#                 1280 << Writing register 15 with 00008000 >>
+#                 1360 << Writing register 16 with 00010000 >>
+#                 1440 << Writing register 17 with 00020000 >>
+#                 1520 << Writing register 18 with 00040000 >>
+#                 1600 << Writing register 19 with 00080000 >>
+#                 1680 << Writing register 20 with 00100000 >>
+#                 1760 << Writing register 21 with 00200000 >>
+#                 1840 << Writing register 22 with 00400000 >>
+#                 1920 << Writing register 23 with 00800000 >>
+#                 2000 << Writing register 24 with 01000000 >>
+#                 2080 << Writing register 25 with 02000000 >>
+#                 2160 << Writing register 26 with 04000000 >>
+#                 2240 << Writing register 27 with 08000000 >>
+#                 2320 << Writing register 28 with 10000000 >>
+#                 2400 << Writing register 29 with 20000000 >>
+#                 2480 << Writing register 30 with 40000000 >>
+#                 2560 << Writing register 31 with 80000000 >>
+# read reg           0 get 00000000 expected 00000000.
+# read reg           0 get 00000000 expected 00000000.
+# read reg           1 get 00000002 expected 00000002.
+# read reg           1 get 00000002 expected 00000002.
+# read reg           2 get 00000004 expected 00000004.
+# read reg           2 get 00000004 expected 00000004.
+# read reg           3 get 00000008 expected 00000008.
+# read reg           3 get 00000008 expected 00000008.
+# read reg           4 get 00000010 expected 00000010.
+# read reg           4 get 00000010 expected 00000010.
+# read reg           5 get 00000020 expected 00000020.
+# read reg           5 get 00000020 expected 00000020.
+# read reg           6 get 00000040 expected 00000040.
+# read reg           6 get 00000040 expected 00000040.
+# read reg           7 get 00000080 expected 00000080.
+# read reg           7 get 00000080 expected 00000080.
+# read reg           8 get 00000100 expected 00000100.
+# read reg           8 get 00000100 expected 00000100.
+# read reg           9 get 00000200 expected 00000200.
+# read reg           9 get 00000200 expected 00000200.
+# read reg          10 get 00000400 expected 00000400.
+# read reg          10 get 00000400 expected 00000400.
+# read reg          11 get 00000800 expected 00000800.
+# read reg          11 get 00000800 expected 00000800.
+# read reg          12 get 00001000 expected 00001000.
+# read reg          12 get 00001000 expected 00001000.
+# read reg          13 get 00002000 expected 00002000.
+# read reg          13 get 00002000 expected 00002000.
+# read reg          14 get 00004000 expected 00004000.
+# read reg          14 get 00004000 expected 00004000.
+# read reg          15 get 00008000 expected 00008000.
+# read reg          15 get 00008000 expected 00008000.
+# read reg          16 get 00010000 expected 00010000.
+# read reg          16 get 00010000 expected 00010000.
+# read reg          17 get 00020000 expected 00020000.
+# read reg          17 get 00020000 expected 00020000.
+# read reg          18 get 00040000 expected 00040000.
+# read reg          18 get 00040000 expected 00040000.
+# read reg          19 get 00080000 expected 00080000.
+# read reg          19 get 00080000 expected 00080000.
+# read reg          20 get 00100000 expected 00100000.
+# read reg          20 get 00100000 expected 00100000.
+# read reg          21 get 00200000 expected 00200000.
+# read reg          21 get 00200000 expected 00200000.
+# read reg          22 get 00400000 expected 00400000.
+# read reg          22 get 00400000 expected 00400000.
+# read reg          23 get 00800000 expected 00800000.
+# read reg          23 get 00800000 expected 00800000.
+# read reg          24 get 01000000 expected 01000000.
+# read reg          24 get 01000000 expected 01000000.
+# read reg          25 get 02000000 expected 02000000.
+# read reg          25 get 02000000 expected 02000000.
+# read reg          26 get 04000000 expected 04000000.
+# read reg          26 get 04000000 expected 04000000.
+# read reg          27 get 08000000 expected 08000000.
+# read reg          27 get 08000000 expected 08000000.
+# read reg          28 get 10000000 expected 10000000.
+# read reg          28 get 10000000 expected 10000000.
+# read reg          29 get 20000000 expected 20000000.
+# read reg          29 get 20000000 expected 20000000.
+# read reg          30 get 40000000 expected 40000000.
+# read reg          30 get 40000000 expected 40000000.
+# read reg          31 get 80000000 expected 80000000.
+# read reg          31 get 80000000 expected 80000000.
+# The simulation completed without errors
+# ** Note: $stop    : D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/regfile_tb.v(78)
+#    Time: 3900 ns  Iteration: 1  Instance: /regfile_tb
+# Break in Module regfile_tb at D:/xy/GDA/MS/ECE/550/Project Checkpoints/3/Regfile/regfile_tb.v line 78
+# End time: 12:45:13 on Oct 05,2023, Elapsed time: 1:13:59
+# Errors: 0, Warnings: 0

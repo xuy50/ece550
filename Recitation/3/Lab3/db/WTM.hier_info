@@ -1,0 +1,335 @@
+|WTM
+in1[0] => comb.IN0
+in1[0] => comb.IN0
+in1[0] => comb.IN0
+in1[0] => comb.IN0
+in1[0] => out.IN0
+in1[1] => comb.IN0
+in1[1] => comb.IN0
+in1[1] => comb.IN0
+in1[1] => comb.IN0
+in1[1] => comb.IN0
+in1[2] => comb.IN0
+in1[2] => comb.IN0
+in1[2] => comb.IN0
+in1[2] => comb.IN0
+in1[2] => comb.IN0
+in1[3] => comb.IN0
+in1[3] => comb.IN0
+in1[3] => comb.IN0
+in1[3] => comb.IN0
+in1[3] => comb.IN0
+in1[4] => comb.IN0
+in1[4] => comb.IN0
+in1[4] => comb.IN0
+in1[4] => comb.IN0
+in1[4] => comb.IN0
+in2[0] => comb.IN1
+in2[0] => comb.IN1
+in2[0] => comb.IN1
+in2[0] => comb.IN1
+in2[0] => out.IN1
+in2[1] => comb.IN1
+in2[1] => comb.IN1
+in2[1] => comb.IN1
+in2[1] => comb.IN1
+in2[1] => comb.IN1
+in2[2] => comb.IN1
+in2[2] => comb.IN1
+in2[2] => comb.IN1
+in2[2] => comb.IN1
+in2[2] => comb.IN1
+in2[3] => comb.IN1
+in2[3] => comb.IN1
+in2[3] => comb.IN1
+in2[3] => comb.IN1
+in2[3] => comb.IN1
+in2[4] => comb.IN1
+in2[4] => comb.IN1
+in2[4] => comb.IN1
+in2[4] => comb.IN1
+in2[4] => comb.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= hadder:S1.port3
+out[2] <= hadder:S9.port3
+out[3] <= hadder:S16.port3
+out[4] <= hadder:S22.port3
+out[5] <= fadder:S23.port4
+out[6] <= fadder:S24.port4
+out[7] <= fadder:S25.port4
+out[8] <= fadder:S26.port4
+out[9] <= fadder:S27.port4
+cout <= fadder:S27.port3
+
+
+|WTM|hadder:S1
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S2
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S3
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S4
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S5
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S6
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S7
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S8
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S9
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S10
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S11
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S12
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S13
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S14
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S15
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S16
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S17
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S18
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S19
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S20
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S21
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|hadder:S22
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+cout <= c.DB_MAX_OUTPUT_PORT_TYPE
+sum <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S23
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S24
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S25
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S26
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|WTM|fadder:S27
+a => xorab.IN0
+a => andab.IN0
+b => xorab.IN1
+b => andab.IN1
+cin => andabc.IN1
+cin => xor_sum.IN1
+cout <= or_cout.DB_MAX_OUTPUT_PORT_TYPE
+sum <= xor_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

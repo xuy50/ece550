@@ -1,0 +1,3 @@
+Cyclone IV E
+EP4CE115F29C7 1.2V 114480 529 3981312 532
+Simulation ModelSim-Altera
